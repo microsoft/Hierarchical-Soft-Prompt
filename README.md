@@ -90,6 +90,25 @@ For paper compatibility, `field_em` and `field_f1` are conditioned on successful
 JSON parsing. The additional `field_em_all_samples` and
 `field_f1_all_samples` values count parse failures as empty predictions.
 
+## Interpret learned prompts
+
+The repository includes a backbone-free prompt-atlas analysis for locally
+trained USPTO-ORD hierarchical soft prompts. It produces schema-group word
+clouds, a PCA/depth map, cosine-similarity views, per-field metrics, and a
+quantitative summary without loading the language-model backbone or training
+data.
+
+```bash
+python -m pip install -e ".[interpretability]"
+python scripts/analyze_prompt_atlas.py \
+  --checkpoint outputs/checkpoints/sp_uspto_seed42_best \
+  --output-dir outputs/interpretability/uspto_prompt_atlas
+```
+
+See [docs/interpretability.md](docs/interpretability.md) for example results,
+methodology, and interpretation limits. Generated analysis remains under
+`outputs/` and should not be committed.
+
 ## Safety and release scope
 
 Keep all datasets, checkpoints, adapters, generated predictions, local
