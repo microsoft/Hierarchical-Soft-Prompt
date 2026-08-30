@@ -117,3 +117,7 @@ contains defensive exclusions, but contributors must inspect staged files and
 run a secret scanner before every release.
 
 See [SECURITY.md](SECURITY.md) for private vulnerability reporting.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
