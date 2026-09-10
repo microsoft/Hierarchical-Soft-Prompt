@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Hierarchical Soft Prompt"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Dey
+    given-names: Soumyadeep
+  - family-names: Tenneti
+    given-names: Srikanth
+  - family-names: Mishra
+    given-names: Bamdev
+  - family-names: Niranjan
+    given-names: Shobhit
+  - family-names: Datar
+    given-names: Mayur
+repository-code: "https://github.com/microsoft/Hierarchical-Soft-Prompt"
+preferred-citation:
+  type: conference-paper
+  title: "Schema-Hierarchical Soft Prompts for Structured Information Extraction"
+  authors:
+    - family-names: Dey
+      given-names: Soumyadeep
+    - family-names: Tenneti
+      given-names: Srikanth
+    - family-names: Mishra
+      given-names: Bamdev
+    - family-names: Niranjan
+      given-names: Shobhit
+    - family-names: Datar
+      given-names: Mayur
+  year: 2026
